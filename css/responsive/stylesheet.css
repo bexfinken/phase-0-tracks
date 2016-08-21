@@ -13,6 +13,8 @@
 
 #side-a ul{
   list-style-type:none;
+  position: fixed;
+  margin-right: 150px;
 }
 
 a {
@@ -40,11 +42,49 @@ a {
 }
 
 #content {
-  float: left;
-  width: 68%;
+  float: right;
+  width: 756px;
+  margin-left: 150px;
 }
 
 #footer {
   clear: both;
   background: #A2A2A2;
 }
+
+
+@media screen and (max-width: 750px) {  
+  .kitten {
+  display:none;
+    }
+  }
+
+@media screen and (max-width: 750px ){
+  #content {
+  font-size: 1.5em; 
+  }
+}
+
+@media screen and (max-width: 750px ){
+  #header {
+  font-size: 1.75em; 
+  }
+}
+
+@media screen and (max-width: 750px ){
+  #side-a {
+  line-height: 200%;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
