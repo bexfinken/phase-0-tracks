@@ -22,7 +22,7 @@ a {
 }
 
 #header {
-  margin: 0 0 15px 0;
+  margin: 0 5px 0px 15px;
   background: black;
   color: white;
 }
@@ -45,13 +45,20 @@ a {
   float: right;
   width: 756px;
   margin-left: 150px;
+  
 }
 
 #footer {
   clear: both;
   background: #A2A2A2;
+  margin: 0 15px 0px 15px;
 }
 
+.kitty {
+  float:left;
+  height:auto;
+  margin: 15px 15px 0px 0px;
+}
 
 @media screen and (max-width: 750px) {  
   .kitten {
@@ -60,28 +67,23 @@ a {
   }
 
 @media screen and (max-width: 750px ){
-  #content {
-  font-size: 1.5em; 
-  }
-}
-
-@media screen and (max-width: 750px ){
-  #header {
-  font-size: 1.75em; 
-  }
-}
-
-@media screen and (max-width: 750px ){
   #side-a {
   line-height: 200%;
   font-size: 1.25em;
   font-weight: bold;
- }
+  width: 200px;
+  }
+}
+/*small mobile*/
+@media screen and (max-width: 350px ){
+  #content {font-size: 1.5em;} 
+  #header {font-size: 1.5em;}
+  #footer {font-size: 1.25em;}
+  #reflection {font-size: 1em;}
 }
 
 
-
-
+}
 
 
 
