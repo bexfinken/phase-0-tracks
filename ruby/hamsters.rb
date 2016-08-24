@@ -4,14 +4,13 @@
 #candidate for adoption?
 #estimated age
 
-puts "Hamster's name:"
+puts "What's your name?:"
 name = gets.chomp
 
-if name == ""
+if 	name == ""
 	name = nil
-	puts "Give the hamster a name!"
+	puts "Let us give you a name!"
 	name = gets.chomp
-	
 	puts "Welcome #{name}!"
 else 
 	puts "Welcome #{name}!"
@@ -20,7 +19,7 @@ end
 puts "On a scale from 1-10, how loud are you?"
 volume = gets.chomp
 
-if volume >= "6"
+if 	volume >= "6"
 	puts "That's loud!"
 else 
 	puts "That's nice and quiet"
@@ -55,7 +54,7 @@ if age == ""
 	puts "Give your best estimate!"
 	age = gets.chomp
 	
-	puts "Oh so young!"
+	puts "Oh, so young!"
 else 
-	puts "Oh so young!"
+	puts "Oh, so young!"
 end 
