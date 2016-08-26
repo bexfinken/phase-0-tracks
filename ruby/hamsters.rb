@@ -31,19 +31,26 @@ puts "Wow! That's a nice color."
 puts "Are you a good candidate for adoption? (yes or no)"
 adoption = gets.chomp
 
+iputs "Are you a good candidate for adoption? (yes or no)"
+adoption = gets.chomp
+
 if adoption == "yes"
 	puts "Don't worry, we'll find a home for you!"
+	adoption = true
 elsif adoption == "no"
 	puts "Don't worry, we'll take care of you!"
+	adoption = false   
 else
 	puts "Sorry, I didn't catch that. Please say yes or no."
 	adoption = gets.chomp
 		if adoption == "yes"
 			puts "Don't worry, we'll find a home for you!"
+			adoption = true 
 		else
 			puts "Don't worry, we'll take care of you!"
+			adoption = false
 		end
-end 
+end  
 
 puts "What is your age?"
 age = gets.chomp
