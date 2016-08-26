@@ -17,9 +17,8 @@ else
 end 
 
 puts "On a scale from 1-10, how loud are you?"
-volume = gets.chomp
-
-if 	volume >= "6"
+volume = gets.chomp.to_i
+if 	volume >= 6
 	puts "That's loud!"
 else 
 	puts "That's nice and quiet"
