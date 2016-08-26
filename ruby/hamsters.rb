@@ -53,12 +53,12 @@ else
 end  
 
 puts "What is your age?"
-age = gets.chomp
+age = gets.chomp.to_i
 
 if age == ""
 	age = nil
 	puts "Give your best estimate!"
-	age = gets.chomp
+	age = gets.chomp.to_i
 	
 	puts "Oh, so young!"
 else 
