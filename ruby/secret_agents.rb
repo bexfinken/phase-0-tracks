@@ -8,7 +8,7 @@ while index < alphabet.length
 	az = alphabet[index]
 
 	if pw == az 
-		puts "yay"
+		puts pw
 	else
 		puts "wah" 
 	end 	
