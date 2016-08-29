@@ -1,6 +1,12 @@
+# Have	password “abc”	alphabet index 0, 1, 2
+#Want 	password “bcd”	alphabet index 1, 2, 3
+#use  password index to identify each letter’s place
+#whie loop for advancing each password letter to the next one in alphabetical order
+
+
 def encrypt(password)
 index = 0
-password = "abc"
+password = "password"
 	while index < password.length
 	  	p password[index].next
   		index += 1
@@ -10,7 +16,15 @@ end
 encrypt("")
 
 
-def decrypt(password)
+#decrypt(password) 
+#Have 	password “bcd”	alphabet index 1, 2, 3
+#Want		password “abc”	alphabet index 0, 1, 2
+#use loop to advance to the next letter of the pass word (counter loop)
+#use loop to find the corresponding letter in the alphabet. (alphabet)
+#since we can’t go backwards with a command, we use the index to go back (index - 1)
+#use  password index to identify each letter’s place
+#while loop for advancing each password letter to the next one in alphabetical order
+#until the counter is done (until loop)def decrypt(password)
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 counter = 0
