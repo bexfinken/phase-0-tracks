@@ -47,12 +47,6 @@ end
 end 
 
 
-
-
-#Release 4
-#decrypt(encrypt("swordfish")) 
-#It didn't work because ruby can't use nested methods 
-
 #ask the secret agent what they'd like to do
 puts "Would you like to encrypt or decrypt?"
 program = gets.chomp
@@ -71,3 +65,9 @@ end
 #fulfills request and exits
 
 puts "Thank you. Stay safe, Agent!"
+
+
+
+#4.4 RELEASE 4
+#decrypt(encrypt("swordfish")) 
+#It didn't work because ruby can't use nested methods 
