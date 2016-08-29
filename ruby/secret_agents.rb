@@ -1,4 +1,4 @@
-# Have	password “abc”	alphabet index 0, 1, 2
+#Have	password “abc”	alphabet index 0, 1, 2
 #Want 	password “bcd”	alphabet index 1, 2, 3
 #use  password index to identify each letter’s place
 #whie loop for advancing each password letter to the next one in alphabetical order
@@ -6,14 +6,13 @@
 
 def encrypt(password)
 index = 0
-password = "password"
 	while index < password.length
-	  	p password[index].next
+	  	print password[index].next
   		index += 1
 	end
 end
 
-encrypt("")
+encrypt("swordfish")
 
 
 #decrypt(password) 
@@ -26,9 +25,11 @@ encrypt("")
 #while loop for advancing each password letter to the next one in alphabetical order
 #until the counter is done (until loop)def decrypt(password)
 
+
+def decrypt(password)
+	
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 counter = 0
-
 
 until counter == password.length
 	pw = password[counter]
@@ -45,7 +46,9 @@ until counter == password.length
 	end 
 	counter += 1
 end
-
 end 
 
-decrypt("password")
+
+
+#decrypt(encrypt("swordfish")) 
+#It didn't work because we cannot use nested methods 
