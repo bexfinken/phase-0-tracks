@@ -1,0 +1,60 @@
+Release 0: Equip Your New Robot
+
+
+- Find out which floor you are in (the floor number is usually on the door jamb)
+- If your current floor number is larger than the number of your destination floor:
+	- Press “down”
+- If your current floor number is smaller than the number of your destination floor:
+	- Press “up”
+- When the door opens, if the elevator has room for you
+	- get in.
+- Otherwise, 
+	- wait until the next one.
+- When you get in the elevator, if you see someone running towards the elevator
+	- Hold the door
+- Otherwise,
+	- Let the door close
+- Press the button of your floor number
+- When the elevator door opens, look at the floor number.
+- If the number matches your destination floor:
+	-Exit the elevator
+- Otherwise, 
+	- Stay in the elevator until the floor number matches your destination floor number.
+
+
+Release 1: Real-Life Algorithm - Walking the dog
+
+- Go to the door and pick up the dogleash hanging up next to the door. 
+	- Call the dog (“Gilbert”) until you see a four legged animal approach:
+		- If you see a four-legged animal approaching
+			- Stop calling
+		- When you have a four-legged animal in front of you
+			- If it’s all black
+			- If it’s big enough to be 70lbs
+		- Put the leash on him.
+	- Otherwise:
+		- Say “Shoo, Princess Unicorn!”
+		- Keep calling Gilbert.
+- When Gilbert has his leash on
+	- Grab his training treats
+	- Take Gilbert outside
+- When Gilbert sees a stick, tell him to sit
+	- If he sits
+		- Release command so he gets his stick
+	- Otherwise,
+		- Tell him leave it, and no stick
+- When Gilbert sees a person on a bike tell him to sit, then lay down
+	- If he does a sit/lay down
+		- Give him a treat
+	- Otherwise
+		- Say “Leave it, Gilbert!”
+- Walk Gilbert until he does his bathroom business. 
+	- If he does his business:
+		- Pick up the poo and toss it in the bin in the alley
+	- Otherwise, keep walking
+- When Gilbert does his bathroom business
+	- Take him back home
+	- Take off his leash
+	- Wash your hands
+	
+
