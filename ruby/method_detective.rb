@@ -8,26 +8,31 @@ Uncomment the calls to catch these methods red-handed.
 => “InVeStIgAtIoN”
 or alt_case
 
+
 # "zom".<???>
 # => “zoom”
+
 
 # "enhance".<???>
 # => "    enhance    "
 
+
 "Stop! You’re under arrest!".upcase!
 => "STOP! YOU’RE UNDER ARREST!"
-#It would be upcase if there was a new string, but there's not.
 
 
 a = "the usual"
 a << " suspects"
 => "the usual suspects"
 
-# " suspects".<???>
-# => "the usual suspects"
+
+a=%w[suspects]
+a.unshift("the usual suspects")
+
 
 "The case of the disappearing last letter".chop
 => "The case of the disappearing last lette"
+
 
 s = "The mystery of the missing first letter"
 s = s[1..-1]
@@ -45,7 +50,5 @@ The ascii code for z is 122
 
 "How many times does the letter 'a' appear in this string?".count "a"
 => 4  
-
-
 
 
