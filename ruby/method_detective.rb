@@ -6,7 +6,7 @@ Uncomment the calls to catch these methods red-handed.
 
 "iNvEsTiGaTiOn".swapcase
 => “InVeStIgAtIoN”
- # or alt_case
+or alt_case
 
 # "zom".<???>
 # => “zoom”
@@ -21,7 +21,7 @@ Uncomment the calls to catch these methods red-handed.
 
 a = "the usual"
 a << " suspects"
-#=> "the usual suspects"
+=> "the usual suspects"
 
 # " suspects".<???>
 # => "the usual suspects"
@@ -43,5 +43,9 @@ s = s[1..-1]
 The ascii code for z is 122 
 
 
-# "How many times does the letter 'a' appear in this string?".<???>
-# => 
+"How many times does the letter 'a' appear in this string?".count "a"
+=> 4  
+
+
+
+
