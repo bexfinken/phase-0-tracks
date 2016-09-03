@@ -1,8 +1,19 @@
-# Initialize and manipulate arrays
-# Initialize and manipulate hashes
-# Use variables to access arrays
-# Use variables to access hashes
-# Experiment with expressions that reference data structures
-# Integrate a data structure into a simple program
+#name
+#age
+#street number
+#street name
+#apt number or nil
+#city
+#state
+#zip
+#kids y/n
+#pets y/n
+#
 
 
+
+
+array = []
+array << "one"
+array << "two"
+array << "nine"
