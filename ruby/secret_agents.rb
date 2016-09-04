@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+password = "bcd"
+index = 0
+
+while index < alphabet.length
+
+	pw = password[0]
+	az = alphabet[index]
+
+	if pw == az
+		puts alphabet[index-1]
+	end 	
+	
+	index += 1
+end 
+=======
 #4.4 RELEASE 2
 
 #Have	password “abc”	alphabet index 0, 1, 2
@@ -71,3 +89,4 @@ puts "Thank you. Stay safe, Agent!"
 #4.4 RELEASE 4
 #decrypt(encrypt("swordfish")) 
 #It didn't work because ruby can't use nested methods 
+>>>>>>> master
