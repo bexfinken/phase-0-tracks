@@ -5,3 +5,12 @@
 # Define consonants
 # Get the consonants to change to the .next consonant
 
+#def alias("first", "last")
+
+name = (gets.chomp)
+"name".split('')
+
+#vowels = ["a", "e", "i", "o", "u"]
+
+
+#end
