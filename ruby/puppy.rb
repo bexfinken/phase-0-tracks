@@ -1,5 +1,5 @@
 # SPECIES
-# Annoyingus Puppylus
+# Puppy
 
 # CHARACTERISTICS
 # Legs: 4 
@@ -7,6 +7,7 @@
 # Tail: varies
 # Name: varies
 # Fur color: varies
+# Cute: yes!
 
 # BEHAVIOR
 # Barks
