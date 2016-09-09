@@ -42,35 +42,54 @@
 
 # end
 
-
 # fido = Puppy.new
-
 
 # Release 2
 
-class Flower
-end
 
-rose = Flower.new
-daisy = Flower.new
-tulip = Flower.new
+# Make a loop to make 50 instances of whatever class.
+# The loop has to store all the instances in a data structure [array]
+# Iterate over that data structure using .each
+# call the instance methods you wrote on each instance. 
+# So if you wrote a Gymnast class, this is where you'd call .flip and .jump on each of your instances of Gymnast.
+
+
+# rose = Flower.new
+# daisy = Flower.new
+# tulip = Flower.new
 
 
 class Flower 
+	arr = []
 
-	def pluck
-		puts "Hey, that's mine!"
-	end 
+	def pluck(petal)
+		flower << arr
+		puts "ouch!"
+	end
 
 	def initialize
 		puts "Initializing new flower instance..."
 	end 
 
-	def flower.each do |flower|
-		puts "#{flower}"
-		50.times do |flower|
-	 
 end 
 
 
-initialize("tulip")
+daisy = Flower.new
+
+
+# 		puts "Hey, that's mine!"
+# 	end 
+
+
+
+# 	def flower.each do |flower|
+# 		puts "#{flower}"
+# 		50.times do |flower|
+	 
+# end 
+
+
+# initialize("tulip")
+
+
+
