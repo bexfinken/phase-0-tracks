@@ -1,16 +1,18 @@
 # # 6.2 Mandatory Pairing: Instance Methods
 # Release 1
 
+# Create methods to make puppies do several commands.
+# fetch, bark a number of times, speak a number of times, my own command (play dead), and initializing new Puppy instances.
 
-class Puppy
-end
+# class Puppy
+# end
 
-duchess = Puppy.new
-fido = Puppy.new
-spot = Puppy.new
-gilbert = Puppy.new	
+# duchess = Puppy.new
+# fido = Puppy.new
+# spot = Puppy.new
+# gilbert = Puppy.new	
 
-class Puppy
+# class Puppy
 
 # def fetch(toy)
 # 	puts "I brought back the #{toy}!"
@@ -45,50 +47,37 @@ class Puppy
 
 
 
+# Release 2
+
+# Make a loop to make 50 instances of whatever class.  DONE
+# The loop has to store all the instances in a data structure [array] DONE
+# Iterate over that data structure using .each DONE
+# call the instance methods you wrote on each instance. DONE
 
 
 
 
+class Flower 
 
-# # Release 2
-# Make a loop to make 50 instances of whatever class.
-# The loop has to store all the instances in a data structure [array]
-# Iterate over that data structure using .each
-# call the instance methods you wrote on each instance. 
-# So if you wrote a Gymnast class, this is where you'd call .flip and .jump on each of your instances of Gymnast.
+	def initialize
+		puts "Initializing new flower instance..."
+	end 
+			  
+	def pluck
+		puts "What the pluck?!"
+	end
 
+end
 
-# rose = Flower.new
-# daisy = Flower.new
-# tulip = Flower.new
+	#	.each do |flower|
+flower_pot = []
+50.times do
+flower_pot << Flower.new
+	puts "Yay!"
+end
 
-
-# class Flower 
-
-# 	def pluck(petal)
-# 		arr = []
-# 		flower << arr
-# 		puts "ouch!"
-# 	end
-
-# 	def initialize
-# 		puts "Initializing new flower instance..."
-# 	end 
-
-# end 
-
-
-# daisy = Flower.new
-
-
-
-
-# # 	def flower.each do |flower|
-# # 		puts "#{flower}"
-# # 		50.times do |flower|
-	 
-# # end 
-
-
-# # initialize("tulip")
+flower_pot.each do |flower|
+	flower.pluck 
+end
+ 
 
