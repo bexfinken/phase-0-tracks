@@ -9,6 +9,9 @@
 # Age default 0
 
 # Release 3
+# Refactor using attr_accessor
+
+# Release 4
 # Use gender & ethnicity arrays to create Santas
 # Santas should be created with randomly selected genders and ethnicities
 # Use Array ruby docs to find ways to randomly select
@@ -66,6 +69,6 @@ santas = []
 
 # santas[0].celebrate_birthday("10")
 
-
 # santas[0].get_mad_at("Rudolph")
+
 
