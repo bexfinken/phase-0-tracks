@@ -8,6 +8,13 @@
 # A reindeer_ranking array
 # Age default 0
 
+# Release 3
+# Use gender & ethnicity arrays to create Santas
+# Santas should be created with randomly selected genders and ethnicities
+# Use Array ruby docs to find ways to randomly select
+# Santa's age should be random number between 0 and 140
+# The program should print out the attributes of each Santa 
+
 
 class Santa 
 	attr_accessor :gender, :ethnicity
@@ -43,24 +50,22 @@ end
 
 santas = []
 	
-	gender = ["agender", "female", "bigender", "male", "female", "gender fluid"]
-	ethnicity = ["black", "Latino", "white", "prefer not to say", "Unicorn", "Multi-ethnic"]
+	gender = ["agender", "female", "bigender", "male", "gender fluid", "gender neutral", "Freddie Mercury", "prefers not to say their gender", "neutrois", "trans"]
+	ethnicity = ["black", "Latinx", "white", "prefers not to say their ethnicity", "Unicorn", "multi-ethnic", "Raza", "Asian", "Boricua", "Nahuatl"]
 
-	# 10.times do 
-	# 	santas << Santa.new
-	# 	puts "HO HO HO"
-	# end 
 
-	gender.length.times do |i|
+	50.times do |i|
   santas << Santa.new(gender[i], ethnicity[i])
-end
+  puts "Santa is #{rand(140)} years old, #{gender.sample}, and #{ethnicity.sample}. Yay, diversity!"
+	end
 
-	# santas.each do |santa|
-	# 	santa.speak
-	# end
+
+# santas.each do |santa|
+# 	santa.speak
+# end
 
 # santas[0].celebrate_birthday("10")
 
 
-	# santas[0].get_mad_at("Rudolph")
+# santas[0].get_mad_at("Rudolph")
 
