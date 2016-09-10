@@ -13,7 +13,7 @@ class Santa
 
 	def initialize
 		puts "initializing Santa instance..."
-		@gender
+		@gender = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 		@ethnicity
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Bltzen"] 
    	@age = 0
@@ -27,16 +27,39 @@ class Santa
 			puts "That was a good #{cookie}!"
 	end
 
+	def birthday
+		@age + 1
+		puts age
+	end
+
+	def age
+		@age
+	end
+
+	def gender
+		@gender
+	end
+  
+  def get_mad_at(reindeer_name)
+    @reindeer_ranking.delete(reindeer_name)
+    @reindeer_ranking << reindeer_name
+    puts @reindeer_ranking
+  end
 end
 
+
 santas = []
+	
 	10.times do 
-	santas << Santa.new
+		santas << Santa.new
 		puts "HO HO HO"
-end 
+	end 
+	
+	santas.each do |santa|
+		santa.speak
+	end
 
-santas.each do |santa|
-	santa.speak
-end 
 
+
+	santas[0].get_mad_at("Rudolph")
 
