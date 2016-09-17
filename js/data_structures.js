@@ -33,17 +33,19 @@ function Car(make, model, year, anyAccidents) {
 	console.log("Check out my sweet ride!");
 }
 
+// Here's the first car
 var anotherCar = new Car("Toyota", "Corolla", 2015, false)
 	console.log(anotherCar);
 	console.log("Listen to that engine!"); 
 	anotherCar.rev();
 
-	
+// And another...
 var otherCar = new Car("Buick","Le Sabre", 1988, true);
 	console.log(otherCar);
 	console.log("Listen to that engine!"); 
 	otherCar.sputter();
 	
+// ...and another...	
 var otherotherCar = new Car ("Chevrolet", "El Camino", 1969, false)
 	console.log(otherOtherCar);
 	console.log("Listen to that engine!");
