@@ -17,14 +17,16 @@ class VirusPredictor
   end
 
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths   #This is still calling the methods
+    speed_of_spread  
   end
+# Calls predicted_death method & speed_of_spread method
 
   private
+# Keeps methods invoked inside the class
 
-  def predicted_deaths(population_density, population, state)
-    # predicted deaths is solely based on population density
+  def predicted_deaths
+# predicted deaths is solely based on population density
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
     elsif @population_density >= 150
@@ -37,11 +39,13 @@ class VirusPredictor
       number_of_deaths = (@population * 0.05).floor
     end
 
+    # Predicts deaths based on population density
+
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
 
-  def speed_of_spread(population_density, state) #in months
+  def speed_of_spread #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
@@ -63,7 +67,7 @@ class VirusPredictor
   end
 
 end
-
+# Predicts how quickly everyone is getting infected based on population density
 #=======================================================================
 
 # DRIVER CODE
@@ -82,6 +86,40 @@ end
 # alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
 # alaska.virus_effects
 
+STATE_DATA.each do |state, value|
+  state = VirusPredictor.new(state, STATE_DATA[state][:population_density], STATE_DATA[state][:population])
+  state.virus_effects
+  end 
+
 
 #=======================================================================
 # Reflection Section
+
+#The hashes in state_data used the hash rocket, and symbols for the population data
+
+# Require_relative connects the file.rb with the file_spec.rb.
+# This way, the methods in the file.rb file will be run in the file_spec.rb
+# Require uses the absolute path to do the same thing.
+
+# Some ways to iterate through  hash are .each, .map, or looping.
+
+# With virus_effects, it was really difficult to see that syntax and 
+# acknowledge it as method calls. It didn't need variables, so it looked
+# weird to me. 
+
+# I feel like iteration became a lot more clear (Thanks, Matt!). 
+# Refactoring also is more clear; it's still kind of difficult, though. 
+# I do feel like I am grasping it more, and I'm understanding some of 
+# the why's of what we're doing, and not simply following directions.
+
+
+
+
+
+
+
+
+
+
+
+
