@@ -1,7 +1,7 @@
 # 5.3 Release 1: Use each, map, and map!
 
 # Declare an array
-spiders = [ "trap door", "wolf", "house", "brown recluse"]
+spiders = [ "trap door spider", "wolf spider", "house spider", "brown recluse spider"]
 
 # Declare a hash
 pets = {
@@ -13,7 +13,7 @@ pets = {
 # Iterate through both using .each
 
 spiders.each do |spider|
-	puts "The #{spider} spider is my most favorite arthropod."
+	puts "The #{spider} is my most favorite arthropod."
 end
 
 pets.each do |animal, breed|
@@ -24,5 +24,5 @@ end
 # Iterate through the array using .map! 
 
 spiders.map! do |spider|
-	puts "OMG, is that a #{spider.upcase} SPIDER?!"
+	puts "OMG, is that a #{spider.upcase}?!"
 end 
