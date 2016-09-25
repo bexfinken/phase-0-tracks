@@ -1,6 +1,8 @@
 #5.2 Release 2: Use a Hash in a Program## This program should get# name, age, number of children, decor theme, #pets, budget, favorite color, phone number / email, preferred way to contact# create a hash to gather info# write code to prompt user for input
 # write code to allow users to update info# When done, the client should be able to exit
 
+
+# Prompt the designer/user for all of this information.
 puts "Welcome! Please enter the following information about your client. Type 'exit' when you're done."
 
 puts "Client's name?"
@@ -63,9 +65,10 @@ client = {
 	budget: ""
 }
 
-p client
+p client # Print the hash back out to the screen when the designer has answered all of the questions.
 
-puts "Would you like to update any info?"
+
+puts "Would you like to update any info?" # Give the user the opportunity to update a key
 update = gets.chomp
 if update == "yes"
 	puts "Please enter the category you'd like to change"
