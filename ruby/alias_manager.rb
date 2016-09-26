@@ -68,4 +68,7 @@ operatives.each do |secret_name, full_name|
   p "#{secret_name(full_name)} is #{full_name}"
 end
 
+
+# RELEASE 2
+
 # I had trouble placing the loop to keep going for more names. I've done that before; I don't know why I can't get it this time. I'm sure the solution will come to me after I submit this.
