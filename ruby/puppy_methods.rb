@@ -1,7 +1,7 @@
 # 6.2 Mandatory Pairing: Instance Methods
 
 
-# Release 1
+# Release 0
 # Add driver code to the bottom to initialize Puppy instances
 class Puppy
 end
@@ -32,8 +32,8 @@ class Puppy
   	puts "I'm sitting pretty! *tips over* CLUNK!"
   end
 
+ # Release 1
  # Add a method "initialize" that prints "Initializing new puppy instance..."
-
   def initialize
   	puts "Initializing new puppy instance..."
   end
@@ -48,4 +48,30 @@ gilbert_unicorn.roll_over
 gilbert_unicorn.dog_years(100)
 gilbert_unicorn.sit_pretty
 
+
+
+# Release 2
+# Design & impliment a class
+
+class Hedgehog
+end
+
+class Hedgehog
+
+	def initialize
+		puts "Here comes a Hedgehog! There goes the neighborhood..."
+	end
+
+	def dance(times)
+		puts "I bust all of the moves!"
+	end
+
+	def snacks(amount)
+		puts"Nom nom nom!"
+	end
+
+end
+
+
+henry = Hegehog.new
 
