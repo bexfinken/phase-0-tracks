@@ -71,9 +71,11 @@ pets.sort do |breed, name|
 	breed[1] <=> name[1]
 end
 
+# A method that will remove items from a data structure until the condition in the block evaluates to false, then stops (you may not find a perfectly working option for the hash, and that's okay).
 
-
-
+array = numbers.drop_while { | x | x < 3
+}
+p array
 
 
 
