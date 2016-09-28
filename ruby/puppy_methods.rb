@@ -62,17 +62,15 @@ class Hedgehog
 		puts "Here comes a Hedgehog! There goes the neighborhood..."
 	end
 
-	def dance(times)
-		puts "I bust all of the moves!"
+	def dance
+		puts "I bust all of the sweet moves!"
 	end
 
-	def snacks(amount)
-		puts"Nom nom nom!"
+	def sweet_moves
+		puts "**does the running man**"
 	end
 
 end
-
-# henry = Hegehog.new
 
 hedgehog_garden = []
 
@@ -81,8 +79,8 @@ hedgehog_garden = []
 end
 
 hedgehog_garden.each do | hog |
-  hog.dance(10)
-  hog.snack(10)
+  hog.dance
+  hog.sweet_moves
 end
 
 
