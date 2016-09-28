@@ -72,6 +72,17 @@ class Hedgehog
 
 end
 
+# henry = Hegehog.new
 
-henry = Hegehog.new
+hedgehog_garden = []
+
+50.times do
+  hedgehog_garden << Hedgehog.new
+end
+
+hedgehog_garden.each do | hog |
+  hog.dance(10)
+  hog.snack(10)
+end
+
 
