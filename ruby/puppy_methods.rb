@@ -25,7 +25,7 @@ class Puppy
 	end
 
 # Add my own trick
- def sit_pretty
+	def sit_pretty
   	puts "I'm sitting pretty! *tips over* CLUNK!"
   end
 
@@ -34,7 +34,6 @@ class Puppy
   def initialize
   	puts "Initializing new puppy instance..."
   end
-
 end
 
 gilbert_unicorn = Puppy.new
@@ -44,9 +43,6 @@ gilbert_unicorn.speak(10)
 gilbert_unicorn.roll_over
 gilbert_unicorn.dog_years(100)
 gilbert_unicorn.sit_pretty
-
-
-
 
 # Release 2
 # Design & impliment a class
@@ -69,7 +65,7 @@ end
 hedgehog_garden = []
 
 50.times do
-  hedgehog_garden << Hedgehog.new
+	 hedgehog_garden << Hedgehog.new
 end
 
 hedgehog_garden.each do | hog |
