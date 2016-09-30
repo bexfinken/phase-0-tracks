@@ -37,7 +37,7 @@ class Puppy
 
 end
 
-gilbert_unicorn = Puppy.new	
+gilbert_unicorn = Puppy.new
 
 gilbert_unicorn.fetch("ball")
 gilbert_unicorn.speak(10)
@@ -47,9 +47,9 @@ gilbert_unicorn.sit_pretty
 
 
 
+
 # Release 2
 # Design & impliment a class
-
 class Hedgehog
 	
 	def initialize
