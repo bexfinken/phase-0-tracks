@@ -4,9 +4,6 @@
 # Release 0
 # Add driver code to the bottom to initialize Puppy instances
 class Puppy
-end
-
-class Puppy
 
 	def fetch(toy)
     puts "I brought back the #{toy}!"
@@ -54,10 +51,7 @@ gilbert_unicorn.sit_pretty
 # Design & impliment a class
 
 class Hedgehog
-end
-
-class Hedgehog
-
+	
 	def initialize
 		puts "Here comes a Hedgehog! There goes the neighborhood..."
 	end
