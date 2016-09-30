@@ -50,7 +50,7 @@ ethnicity = ["Chicano", "Nahuatl", "Inuit", "black", "Latinx", "white", "First P
 santa = Santa.new(gender, ethnicity)
 santa.get_mad_at("Prancer")
 santa.celebrate_birthday(100)
-	
+
 
 # Release 4
 # Random gender from array
