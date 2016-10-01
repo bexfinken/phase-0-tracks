@@ -54,7 +54,7 @@ santa.celebrate_birthday(100)
 
 # Release 4
 # Random gender from array
-# Random gender from array 
+# Random ethnicity from array 
 # Random age between 0 and 140.
 # Program should print out the attributes of each Santa using the instance methods that give you access to that data.
 
