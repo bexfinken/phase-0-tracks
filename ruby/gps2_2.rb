@@ -8,6 +8,20 @@
   # pretty list method
   # output: Hash
 
+groceries = "carrots apples cereal pizza"
+
+def make_list(groceries)
+	grocery_list = Hash.new 
+	food = groceries.split (" ")
+	food.each do |item|
+	grocery_list[item] = 5
+	end
+	p grocery_list
+end
+
+make_list("milk bread")
+
+
 # Method to add an item to a list
 # input: item name and optional quantity
 # steps: add key value to existing hash
