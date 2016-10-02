@@ -7,25 +7,32 @@
   # print the list to the console 
   # pretty list method
   # output: Hash
-
-groceries = "carrots apples cereal pizza"
-
+  
 def make_list(groceries)
-	grocery_list = Hash.new 
-	food = groceries.split (" ")
-	food.each do |item|
-	grocery_list[item] = 5
-	end
-	p grocery_list
+  grocery_list = Hash.new 
+  foods = groceries.split (" ")
+  foods.each do |item|
+  grocery_list[item] = 5
+  end
+  p grocery_list
 end
 
-make_list("milk bread")
+grocery_list = make_list("milk bread onions asparagus brie")
 
 
-# Method to add an item to a list
+# Method to add an item and a quantity to a list
 # input: item name and optional quantity
 # steps: add key value to existing hash
 # output: updated hash with new item/quantity
+
+def add_food(grocery_list, food, quantity)
+  grocery_list[item] = quantity
+  p grocery_list
+end
+      
+add_food(grocery_list, "grapes", 10)
+
+
 
 # Method to remove an item from the list
 # input: key
