@@ -25,12 +25,12 @@ grocery_list = make_list("milk bread onions asparagus brie")
 # steps: add key value to existing hash
 # output: updated hash with new item/quantity
 
-def add_food(grocery_list, food, quantity)
+def add_item(grocery_list, item, quantity)
   grocery_list[item] = quantity
   p grocery_list
 end
-      
-add_food(grocery_list, "grapes", 10)
+
+add_item(grocery_list, "grapes", 10)
 
 
 
