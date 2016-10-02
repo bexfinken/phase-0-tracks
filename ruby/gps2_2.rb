@@ -54,6 +54,12 @@ remove_item(grocery_list, "bread")
 # steps: hash, item, new value
 # output: has containing item with updated value
 
+def update_food_quantity(grocery_list, food_item, new_quantity)
+  grocery_list[food_item] = new_quantity
+  p grocery_list
+end
+
+
 # Method to print a list and make it look pretty
 # input: grocery hash
 # steps: create a loop to format each key value
