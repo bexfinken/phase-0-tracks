@@ -7,7 +7,7 @@
   # print the list to the console 
   # pretty list method
   # output: Hash
-  
+
 def make_list(groceries)
   grocery_list = Hash.new 
   foods = groceries.split (" ")
@@ -18,6 +18,7 @@ def make_list(groceries)
 end
 
 grocery_list = make_list("milk bread onions asparagus brie")
+
 
 
 # Method to add an item and a quantity to a list
@@ -38,6 +39,15 @@ add_item(grocery_list, "grapes", 10)
 # input: key
 # steps: Use delete method to remove key
 # output: updated hash without item 
+
+def remove_item(grocery_list, food_item)
+  grocery_list.delete(food_item)
+  p grocery_list
+end
+
+remove_item(grocery_list, "bread")
+
+
 
 # Method to update the quantity of an item
 # input: item, new quantity
