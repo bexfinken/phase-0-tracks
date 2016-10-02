@@ -65,3 +65,12 @@ end
 # steps: create a loop to format each key value
 # output: pretty list
 
+
+def pretty_list(grocery_list)
+  puts "Here's your pretty grocery list:"
+  grocery_list.each do |food_item, quantity|
+    puts "You need #{quantity} #{food_item}"
+  end
+end
+
+pretty_list(grocery_list)
