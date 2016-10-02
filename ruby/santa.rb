@@ -1,5 +1,8 @@
-class Santa 
-	# Relese 3
+# 6.3 Attibutes
+
+
+ class Santa 
+	# Release 3
 	attr_accessor :gender # this replaces getter methods
 	attr_accessor :ethnicity # this replaces getter methods
 	attr_accessor :age # this replaces getter methods
