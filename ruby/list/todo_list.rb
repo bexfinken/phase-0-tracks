@@ -1,13 +1,14 @@
 class TodoList
 	
 
-	def initialize(list_array)
-		@list = list_array
-		puts "initializing To Do List..."
+	def initialize(list)
+		@list = list 
+		puts "initialize..."
 	end
 
-
-
+	def get_items
+		@list 
+	end
 
 
 	# def add_item(item) 
