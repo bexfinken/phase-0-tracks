@@ -12,7 +12,8 @@ describe WordGame do
 	let(:game) {WordGame.new ([kitten, "k", "i", "t", "e", "n"])}
 	
 	it "gives you an attempt to guess per letter in the word" do
-		expect(number_of_guesses.word_length). to eq secret_word.length
+		each_letter.one_turn("k", "i", "t", "e", "n")
+		expect(each_letter.one_turn). to eq ["k", "i", "t", "e", "n", 6]
 	end
 
 	it "adds letters to the secret word as they are guessed correctly" do
@@ -20,6 +21,8 @@ describe WordGame do
 		expect(game.correct_guess).to eq "k", "i", "t", "e", "n"
 	end
 
+	it "doesn't count repeated letters as a turn" do
+		game.same_letter(sa)
 
 
 
