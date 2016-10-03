@@ -8,7 +8,15 @@
 
 require_relative 'game'
 
-describe WordGame do |
+describe WordGame do 
 	let(:game) {WordGame.new ([kitten, "k", "i", "t", "e", "n"])}
 	
+	it "adds letters to the secret word as they are guessed correctly" do
+		game.correct_guess("k", "i", "t", "e", "n")
+		expect(game.correct_guess).to eq "k", "i", "t", "e", "n"
+	end
+
+	
+
+
 end
