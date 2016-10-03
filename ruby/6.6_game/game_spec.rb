@@ -22,7 +22,13 @@ describe WordGame do
 	end
 
 	it "doesn't count repeated letters as a turn" do
-		game.same_letter(sa)
+		expect(same_letter(["x" = "x"]. to eq !one_turn)
+	end
+
+	it "populates a letter in each blank" do
+		game.correct_guess(puts " ")
+		expect(game.correct_guess).to eq "puts "correct_guess"
+
 
 
 
