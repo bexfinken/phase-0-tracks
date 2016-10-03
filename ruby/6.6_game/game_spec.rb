@@ -5,3 +5,10 @@
 # When guessing correctly, the letters should populate the blank spots
 # If the player wins, they get cheered "YAY"
 # If the player loses, they get booed "WHOMP WHOMP"
+
+require_relative 'game'
+
+describe WordGame do |
+	let(:game) {WordGame.new ([kitten, "k", "i", "t", "e", "n"])}
+	
+end
