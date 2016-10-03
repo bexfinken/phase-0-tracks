@@ -1,17 +1,19 @@
 class TodoList
-	# store list items given on initialization
-	def initialize
+	attr_reader :list 
+
+	def initialize(item)
 		@list = ["do the dishes", "mow the lawn"]
 	end
 
-	def 
+	def add_item(item) 
+		@list << item
 	end
 
-	def 
+	def delete_item(item)
+		@list.delete(item)		
 	end
-		
+
+	def get_item(index) 
+		@list[index]
+	end
 end
-
-
-
-
