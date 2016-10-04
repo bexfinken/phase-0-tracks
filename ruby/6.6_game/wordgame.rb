@@ -1,21 +1,25 @@
-class Dancer
-	attr_reader :input
+class Game
 	attr_accessor :word
-	attr_accessor :guess
-end
 
-	def initialize(word, guess)
-		@input = input
+	def initialize(word)
+		@splits = word.split
 		@word = word
-		@guess = guess
 		@letters = []
+		@guess_count = 0
+		@incorrect_guess = 0
+		@game_over = false
 		p "initializing game..."
 	end
 
-	def word_prompt(word)
-		@word.gets chomp
-		@word = input
-		p word_prompt
+	def input
+		@input
+		p @input
 	end 
 
-def 
+	def splits
+		@splits
+		p @splits
+
+		
+	end
+end
