@@ -10,7 +10,7 @@ require_relative 'game'
 
 describe WordGame do 
 	let(:game) {WordGame.new ([kitten, "k", "i", "t", "e", "n"])}
-	
+
 	
 	it "gives you an attempt to guess per letter in the word" do
 		each_letter.one_turn("k", "i", "t", "e", "n")
@@ -23,7 +23,7 @@ describe WordGame do
 	end
 
 	it "doesn't count repeated letters as a turn" do
-		expect(same_letter(["x" = "x"]. to eq !one_turn)
+		expect(same_letter["x","x"]. to eq !one_turn)
 	end
 
 	it "populates a letter in each blank" do
