@@ -8,12 +8,12 @@ var largest = 0; //where you start the count
 var largestWord = ""; // empty container
 for (var i = 0; i < words.length; i++) { // iterate
     if (words[i].length > largest) { 
-        largest = words[i].length; // iterate and find length of each word 
+        largest = words[i].length; // counts a word each time it loops
         largestWord = words[i]; // shows longest word at the index
     }
 }
 console.log(largestWord); // print the longest word
-// I am not sure if it's still a function without teh word "function" in there. I tried to fit it in.
+// I am not sure if it's still a function without the word "function" in there. I tried to fit it in.
 
 // Release 1
 
