@@ -7,7 +7,7 @@
 // RELEASE 0: Work with Arrays
 // var horseColors = ["Mildred", "Freddie", "Juan", "Guadalupe"];
 // var horseNames = ["pink", "purple", "orange", "green"];
-	
+
 // Release 1: Build an Object
 // Use the arrays to build a JS object
 // Keys(properties) = horse names values = colors
@@ -24,7 +24,7 @@ horseNames.push("George")
 var barn = {}
 
 for (var i = 0; i < horseColors.length; i++) {
-barn[horseNames[i]] = horseColors[i] 
+  barn[horseNames[i]] = horseColors[i]
 }
 
 console.log(barn)
@@ -35,13 +35,15 @@ console.log(barn)
 
 // constructor function
 function Car(make, model, isNew) {
-	
-	this.make = make;
-	this.model = model;
-	this.isNew = isNew;
 
-  this.rev = function() {console.log("VROOM."); }; 
-	console.log("Your chariot is ready!");
+  this.make = make;
+  this.model = model;
+  this.isNew = isNew;
+
+  this.rev = function() {
+    console.log("VROOM.");
+  };
+  console.log("Your chariot is ready!");
 }
 console.log("Dude, where's my car?");
 
