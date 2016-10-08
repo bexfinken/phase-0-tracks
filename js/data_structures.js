@@ -5,8 +5,8 @@
 // Write additional code that adds another color to the colors array, and another horse name to the horses array.
 
 // RELEASE 0: Work with Arrays
-var colors = ["Mildred", "Freddie", "Juan", "Guadalupe"];
-var horseNames = ["pink", "purple", "orange", "green"];
+// var horseColors = ["Mildred", "Freddie", "Juan", "Guadalupe"];
+// var horseNames = ["pink", "purple", "orange", "green"];
 	
 // Release 1: Build an Object
 // Use the arrays to build a JS object
@@ -15,10 +15,15 @@ var horseNames = ["pink", "purple", "orange", "green"];
 
 var horseColors = ["Mildred", "Freddie", "Juan", "Guadalupe"];
 var horseNames = ["pink", "purple", "orange", "green"];
-var horse = (horseNames, horseColors);
-var barn = []
 
-for (var i = 0; i < horseColors.length; i++)
-{
-	console.log("Our horse's name is " + horse[horseNames] + ", and they are a beautiful shade of " + horse[horseColors] + " color!");
+horseColors.push("pink")
+horseNames.push("George")
+
+
+var barn = {}
+
+for (var i = 0; i < horseColors.length; i++) {
+barn[horseNames[i]] = horseColors[i] 
 }
+
+console.log(barn)
