@@ -1,0 +1,10 @@
+Are there any handy RSpec cheat sheets out there? 
+What observations can you make from skimming them?
+They behave like 
+
+
+Where is the RSpec documentation?
+What other RSpec matchers are available aside from eq?
+	expect().not_to, should
+Can you find any free RSpec tutorials or in-depth resources that might be helpful to bookmark?
+Google sent me to a github page with a list of matchers, a pdf of RSpec matchers, and where/how they should be used. YAY.

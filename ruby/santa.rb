@@ -24,11 +24,19 @@
 	end
 
 	def age=(age) # setter method
+		puts "Santa is #{rand(140)} years old."
 		@age = age
 	end
 
 	def ethnicity=(ethnicity)# setter method
 		@ethnicity = ethnicity
+		puts "Santa's ethnicity is #{ethnicity.sample}."
+	end
+
+	def gender=(gender)
+		@gender = gender
+		puts "Santa's gender is #{gender.sample}"
+		
 	end
 
 	def celebrate_birthday(number) # should age Santa by one year.
@@ -61,9 +69,13 @@ santa.celebrate_birthday(100)
 # Random age between 0 and 140.
 # Program should print out the attributes of each Santa using the instance methods that give you access to that data.
 
-100.times do | index |
-	north_pole << Santa.new(gender[index], ethnicity[index])
-	puts "Santa is #{rand(140)} years old. Their gender is #{gender.sample}, and their ethnicity is #{ethnicity.sample}."
+10.times do | index |
+	#I had gender[index], and ethnicity[sample]
+	north_pole << Santa.new(gender.sample, ethnicity.sample) 
+	# NOTE FROM GRADED CODE
+	# In line 63, you're not actually printing out any info about the new Santa object just added to the north_pole array-- you're printing a statement using randomized local variables instead of instance variables from the class.
+	# "Basically, you have the wrong input, but you're getting the correct output because you're printing the right stuff.""
 end	
-
+north_pole << Santa.new(gender.sample, ethnicity.sample)
+# santa = Santa.new(:gender, :ethnicity, :age)
 
