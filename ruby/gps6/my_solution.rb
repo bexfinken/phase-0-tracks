@@ -4,18 +4,20 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
+# The my_solution.rb file has access to the state data
 #
 require_relative 'state_data'
 
 class VirusPredictor
 
+  # initialize and parameters of the class
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
 
+  # This is where the report is created for each state
   def virus_effects
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
@@ -23,24 +25,26 @@ class VirusPredictor
 
   private
 
-  def predicted_deaths(population_density, population, state)
+  # different outcomes conditional on densiti\
+  def predicted_deaths
     # predicted deaths is solely based on population density
-    if @population_density >= 200
+    case @population_density 
+    when >= 200
       number_of_deaths = (@population * 0.4).floor
-    elsif @population_density >= 150
+    when >= 150
       number_of_deaths = (@population * 0.3).floor
-    elsif @population_density >= 100
+    when >= 100
       number_of_deaths = (@population * 0.2).floor
-    elsif @population_density >= 50
+    when >= 50
       number_of_deaths = (@population * 0.1).floor
     else
       number_of_deaths = (@population * 0.05).floor
     end
 
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
-
   end
 
+    # returns speed dependent on pop density
   def speed_of_spread(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
