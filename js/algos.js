@@ -19,7 +19,6 @@ console.log(largestWord); // print the longest word inside the container
 
 // I am not sure if it's still a function without the word "function" in there. I tried to fit it in. 
 
-
 // Release 1
 
 // Write a function that takes two objects and checks to see if the objects share at least one key-value pair. (You'll keep adding to this file, so we suggest grouping functions at the top and testing at the bottom of the file.) If we called your function with {name: "Steven", age: 54} and {name: "Tamir", age: 54}, the function would return true, because at least one key-value pair matches between the two objects. If no pairs match, the function should return false. For this project, a string or identifier with the same name can be considered equivalent.
