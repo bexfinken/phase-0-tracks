@@ -1,0 +1,110 @@
+8.3 Release 2: Execute SQL Queries
+
+1.Display the information in one table (either table is fine).
+
+1|bowtie|150|true|Sontara
+2|fez|250|false|Sontara
+3|stripey scarf|10|true|Ood-Sphere
+4|wide-brimmed hat|10|true|Ood-Sphere
+5|skirt|1000|false|Skaro
+6|dalekenium|1000|false|Skaro
+
+
+
+2.Update an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> UPDATE stock SET quantity=250 WHERE quantity<250;
+sqlite> SELECT * FROM stock;
+|bowtie|250|true|Sontara
+|fez|250|false|Sontara
+|striped scarf|250|true|Ood-Sphere
+|wide brimmed hat|250|true|Ood-Sphere
+|skirt|1000|false|Skaro
+|dalekenium|1000|false|Skaro
+
+
+
+3.Display the information in both tables using one query.
+
+sqlite> SELECT * FROM stock, locations WHERE stock.location_id = locations.id;
+1|bowtie|150|true|1|1|Sontara
+2|fez|250|false|1|1|Sontara
+3|stripey scarf|10|true|2|2|Ood-Sphere
+4|wide-brimmed hat|10|true|2|2|Ood-Sphere
+5|skirt|1000|false|3|3|Skaro
+6|dalekenium|1000|false|3|3|Skaro
+
+
+4.Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+sqlite> SELECT * FROM stock WHERE location_id="Skaro";
+|skirt|1000|false|Skaro
+|dalekenium|1000|false|Skaro
+
+
+
+5.Delete an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> DELETE FROM stock WHERE product="skirt";
+sqlite> SELECT * FROM stock;
+|bowtie|250|true|Sontara
+|fez|250|false|Sontara
+|striped scarf|250|true|Ood-Sphere
+|wide brimmed hat|250|true|Ood-Sphere
+|dalekenium|1000|false|Skaro
+
+
+
+
+8.3. Release 3; Research on Your Own
+
+1.There are lots of different kinds of joins. What are they? 
+  - Inner (simple) join: It links information from two tables at a specific field.
+  - Left outer join: It gives access to rows that meet the condition of one field.
+
+
+2.Can you apply different conditions to a join to change what's displayed?
+  - Yes,but you would use a whole other table.
+
+
+3.Can you bookmark any good diagrams that will help you tell different joins apart in the future?
+  - Yes! It’s probably the same one my cohort mates are using:
+    https://www.techonthenet.com/sqlite/joins.php
+  
+
+4.Try a few different joins in your database, and record the commands and the output in queries.txt.
+
+sqlite> SELECT * FROM stock LEFT OUTER JOIN locations ON location="Sontara";
+1|bowtie|150|true|1|1|Sontara
+2|fez|250|false|1|1|Sontara
+3|stripey scarf|10|true|2|1|Sontara
+4|wide-brimmed hat|10|true|2|1|Sontara
+5|skirt|1000|false|3|1|Sontara
+6|dalekenium|1000|false|3|1|Sontara
+
+sqlite> SELECT product FROM stock NATURAL JOIN locations;
+bowtie
+fez
+stripey scarf
+sqlite> 
+
+sqlite> SELECT product FROM stock SIMPLE JOIN locations;
+bowtie
+bowtie
+bowtie
+fez
+fez
+fez
+stripey scarf
+stripey scarf
+stripey scarf
+wide-brimmed hat
+wide-brimmed hat
+wide-brimmed hat
+skirt
+skirt
+skirt
+dalekenium
+dalekenium
+dalekenium
+
