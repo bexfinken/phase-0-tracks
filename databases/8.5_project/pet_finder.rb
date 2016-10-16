@@ -5,16 +5,15 @@
 require 'sqlite3'
 require 'faker'
 
-# create a database
+# create 'pets.db' database
 db = SQLite3::Database.new("pets.db")
 
-#create a table
+#create the 'your_pet' table
 create_table_cmd = <<-SQL
 	CREATE TABLE IF NOT EXISTS your_pet (
 	id INTEGER PRIMARY KEY,
 	type_of_pet VARCHAR(255),
-	good_with_cats BOOLEAN,
-	good_with_dogs BOOLEAN,
+	good_with_other_pets BOOLEAN,
 	good_with_kids BOOLEAN,
 	name VARCHAR(255),
 	age INT,
@@ -23,4 +22,17 @@ create_table_cmd = <<-SQL
 	)
 SQL
 
-db.execute(create_table_cmd)
+# db.execute(create_table_cmd)
+
+db.execute("INSERT INTO your_pet (type_of_pet, good_with_other_pets, good_with_kids, name, age, gender, days_in_shelter) VALUES ('hedgehog', 'true', 'false', 'Nacho', 1, 'female', 7)") 
+
+
+def petsplotion(db, type_of_pet, good_with_other_pets, good_with_kids, name, age, gender, days_in_shelter)
+  db.execute("INSERT INTO your_pet (type_of_pet, good_with_other_pets, good_with_kids, name, age, gender, days_in_shelter) VALUES (?, ?, ?, ?, ?, ?, ?)", [type_of_pet, good_with_other_pets, good_with_kids, name, age, gender, days_in_shelter])
+end
+
+
+
+100.times do
+  create_kitten(db, Faker::Name.name, 0)
+end
