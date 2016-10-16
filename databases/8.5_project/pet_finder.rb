@@ -7,3 +7,20 @@ require 'faker'
 
 # create a database
 db = SQLite3::Database.new("pets.db")
+
+#create a table
+create_table_cmd = <<-SQL
+	CREATE TABLE IF NOT EXISTS your_pet (
+	id INTEGER PRIMARY KEY,
+	type_of_pet VARCHAR(255),
+	good_with_cats BOOLEAN,
+	good_with_dogs BOOLEAN,
+	good_with_kids BOOLEAN,
+	name VARCHAR(255),
+	age INT,
+	gender VARCHAR(255),
+	days_in_shelter INT
+	)
+SQL
+
+db.execute(create_table_cmd)
