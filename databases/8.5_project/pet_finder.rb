@@ -43,13 +43,7 @@ i_hate_pets_cmd = <<-SQL
 	SELECT * FROM new_pet WHERE pets_ok = "false"
 SQL
 
-format_cmd = <<-SQL
-	.headers_on
-	.mode column
-SQL
-
-
-# I wrote this to try to print line 163 "I'm sure (name) will be very happy with you!", but I wasn't able to implement it.  
+# I wrote this to try to print line 160 "I'm sure (name) will be very happy with you!", but I wasn't able to implement it.  
 # name_cmd = <<-SQL
 # 	p name
 # SQL
@@ -168,3 +162,5 @@ input = gets.chomp
 
 	# this clears the table for a new user
 	db.execute(drop_table_cmd)
+
+	# One of the things I"m going to keep working on is having an error message when the user enters a pet number that is not one of the choices provided.
