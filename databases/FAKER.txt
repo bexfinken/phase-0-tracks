@@ -1,0 +1,24 @@
+
+BOOLEAN
+Faker::Boolean.boolean #=> true
+Faker::Boolean.boolean(0.2) #=> false
+
+
+COLOR
+Faker::Color.color_name #=> "yellow"
+
+
+DATE (Random date in the past (up to maximum of N days)
+Faker::Date.backward(14) #=> "Fri, 19 Sep 2014"
+
+
+CUSTOM (this is address; let’s explore what we can do.)
+en-au-ocker:
+  faker:
+    name:
+      # Existing faker field, new data
+      first_name: [Charlotte, Ava, Chloe, Emily]
+
+      # New faker fields
+      ocker_first_name: [Bazza, Bluey, Davo, Johno, Shano, Shazza]
+      region: [South East Queensland, Wide Bay Burnett, Margaret River, Port
