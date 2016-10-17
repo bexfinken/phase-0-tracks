@@ -150,6 +150,7 @@ input = gets.chomp
 						puts "Kids scare me :("
 					end
 			end #.each
+	# This option is if the user chooses something other than the available choices.		
 	else 
 		puts " \n-------------Thanks for visiting us!--------------- <3 \n"
 		puts "Maybe you can come back when you're ready."
@@ -159,7 +160,7 @@ input = gets.chomp
 
 
 
-# choose pet from narrowed down results
+	# choose pet from narrowed down results
 	puts " \n-------------- Almost there! -------------------- <3 \n" 
 	puts "Please enter the Pet Number of the newest member of your family!\n"
 	pet_num = gets.chomp
