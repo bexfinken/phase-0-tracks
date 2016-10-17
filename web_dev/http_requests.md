@@ -1,8 +1,5 @@
 <!-- 9.1 Release 0 -->
 
-<!--2.	
-	2.	What is the difference between a GET request and a POST request? When might each be used?
-	4.	Optional bonus question: What is a cookie (the technical kind, not the delicious kind)? How does it relate to HTTP requests? -->
 
 1.	What are some common HTTP status codes?
 	Some common HTTP status codes are:
@@ -38,7 +35,8 @@
 
 			451 Unavailable for Legal Reasons:
 			No access allowed because the reosurce is censored (by the governement!)
-			(I don'nt know how common this is, but I included it because I found it interesting)
+			(I don't know how common this is, but I included it because I found it interesting)
+
 
 		Server Error Response
 
@@ -49,4 +47,23 @@
 			The HTTP version isn't supported by the server 
 
 
-	2.	What is the difference between a GET request and a POST request? When might each be used?
+
+2.	What is the difference between a GET request and a POST request? When might each be used?
+
+
+		GET: 
+		Retrieves information requested
+		This would be used when looking at a page with graphics, etc.
+
+		POST:
+		Submits data to be processed.
+		It's used for functions that need more protection, like online shopping.
+
+
+3.	Optional bonus question: 
+	What is a cookie (the technical kind, not the delicious kind)? How does it relate to HTTP requests?
+
+	Cookies are bits of data sent by the server to the browser. They're stored until there's another request to that server. It's like the chip in your pet so they don't get lost.
+
+
+
