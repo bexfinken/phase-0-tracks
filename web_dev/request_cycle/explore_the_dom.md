@@ -3,7 +3,6 @@
 Use dev tools to explore the DOM properties of an HTML element. Find at least five properties (in addition to the ones pointed out in the video) that might be interesting to change once the page is loaded, either because you have a good guess at what they do, or because you're curious about what they do.
 
 1 	Element.scrollIntoViewIfNeeded()
-
 	This sounded interesting. It scrolls the element into the browser window if it's not visible. I looked it up, and apparently, this is not standard. So, if you changed it in the DOM, you run the risk of users not being able to access your page.
 
 2.	isContentEditable:false
