@@ -1,8 +1,8 @@
 9.1 Release 2
 
-Use dev tools to explore the DOM properties of an HTML element. Find at least five properties (in addition to the ones pointed out in the video) that might be interesting to change once the page is loaded, either because you have a good guess at what they do, or because you're curious about what they do.
+Use dev tools to explore the DOM properties of an HTML element. Find at least five properties (in addition to the ones pointed out in the video) that might be interesting to change once the page is loaded, either because you have a good guess at what they do, or because you're curious about what they do
 
-1 	Element.scrollIntoViewIfNeeded()
+1.	Element.scrollIntoViewIfNeeded
 	This sounded interesting. It scrolls the element into the browser window if it's not visible. I looked it up, and apparently, this is not standard. So, if you changed it in the DOM, you run the risk of users not being able to access your page.
 
 2.	isContentEditable:false
@@ -11,7 +11,7 @@ Use dev tools to explore the DOM properties of an HTML element. Find at least fi
 3.	dataset:DOMStringMap
 	This was a bit of a rabbit hole. I was interested because it references the DOM. First, I had to get a clear idea of what a dataset is in relation to the DOM. So, data_* is a class of attributes that are custom, so propriatary information can exchanged between HTML and the DOM.
 
-4.	currry:function j()
+4.	curry:function j()
 	I chose this because it sounded delicious. I had no idea what it is (and I'm still wrapping my brain around some of it), but from what I can tell, this is a way of writing a function so that it applies only some of the arguments you passed. So, if you only need some of the parameters, you can use those, instead of having to find all of them and apply all you need. I guess if you changed this, it might make things run a bit slower, because there would be more code to get through.
 
 
