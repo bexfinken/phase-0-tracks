@@ -20,8 +20,13 @@ Release 0: Make a plan
 3.	Are breaks important? Yeah! 
 
 4.	Make a few notes on  how you plan to approach the topic, and why
-	Start with definitions, and look at syntax. I understand the concept of jQuery, but I don't know what individual things are called, or how to write them into code. Look a concepts that are kind of familiar, so I know what's supposed to happen with the page.
+	I'm going to start with definitions, and look at syntax. I understand the concept of jQuery, but I don't know what individual things are called, or how to write them into code. Look a concepts that are kind of familiar, so I know what's supposed to happen with the page.
 	Find some pages with information, and link the to them. 
+
+
+Release 1: Study up
+
+	The things that worked best for me were pretty much what I described above. It's how I've been approaching things, and it works for me. I also type up some notes. It's helpful for me to put things into my own words, so I understand the material better.
 
 
 
