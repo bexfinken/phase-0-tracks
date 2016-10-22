@@ -1,0 +1,8 @@
+jquery	
+
+$ (document).ready(function() {
+`('.godzilla').on('click', function(){`
+`document.getElementById("godzilla")
+}
+
+
