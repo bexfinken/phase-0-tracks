@@ -36,7 +36,7 @@ end
 # Release 1
 post 'students' do
 	p params 
-	redirect '/'
+	redirect 'students/release_0'
 
 # Release 2
 get '/students/update' do
@@ -48,7 +48,7 @@ end
 post '/students/update' do
   db.execute( DB[:students].where(:id => params[:id]).
   update('id = id.rand(200))
-  redirect '/'
+  redirect 'students/release_2'
  
 
 
