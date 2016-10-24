@@ -1,9 +1,17 @@
-<!DOCTYPE html>
+<!-- 9.5 Release 0 -->
 <html>
 <head>
-	<title></title>
+  <title>Student ID Directory</title>
 </head>
 <body>
-
+  <h1>Student ID Directory</h1>
+  <p>Welcome to the student id directory.</p> 
+  <ul>
+    <% @students.each do |student| %>
+      <li><%= student['id'] %>, <%= student['name'] %></li> 
+    <% end %>     
+  </ul>
 </body>
 </html>
+
+
